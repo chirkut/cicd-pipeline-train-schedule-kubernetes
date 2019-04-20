@@ -44,7 +44,7 @@ pipeline {
             }
             steps {
                 input 'Deploy to Production?'
-                milestone(1)
+                //milestone(1)
                 //implement Kubernetes deployment here
                 kubernetesDeploy(
                     kubeconfigId: 'kubeconfig',
